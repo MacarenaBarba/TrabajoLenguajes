@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset ="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title> ÓpticaMaca</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a
+                    href="#Inicio"> Inicio </a> </li>
+                    <li> <a 
+                    href="#quienes-somos"> ¿Quiénes somos? </a></li>
+                    <li> <a 
+                    href="#productos-servicios" > Productos y Servicios</a></li>
+                    <li> <a
+                    href="#contacto"> Contacto</a></li>
+                    <li> <a 
+                    href="#Trabaja-con-nosotros"> Trabaja con nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Sección de Inicio-->
+        <section id="Inicio">
+            <h1> Bienvenidos a ÓpticaMaca</h1>
+            <p> El fín de las gafas caras.</p>
+            <img src="imagen.optica.jpg" alt="ÓpticaMaca">
+        </section>
+        <!--Sección de ¿Quiénes somos?-->
+        <section id="quienes-somos">
+            <h2>¿Quiénes somos? </h2>
+            <p> Somos una óptica familiar con más de 15 años de experiencia en el cuidado de tu visión  </p>
+            <img src="optica.miller.webp" alt="optica">
+            <img src="opticamaria.png" alt="Optometrista Maria">
+            <p>Nuestra optometrista María</p>
+            <img src="opticopaco.png" alt="Optometrista Paco">
+            <p>Paco, nuestro óptico especialista en baja visión</p>
+
+        </section>
+        <!-- Sección de Productos y Servicios-->
+        <section id="productos-servicios">
+            <h2>Productos y Servicios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gafas de sol</td>
+                        <td>Gafas de sol polarizadas</td>
+                        <td>40 Euros</td>
+                    </tr>
+                    <tr>
+                        <td>Gafas progresivas</td>
+                        <td>Montura más cristales multifocales con antirreflejante</td>
+                        <td>Desde 180 Euros</td>
+                    </tr>
+                    <tr>
+                        <td>Gafas monofocales</td>
+                        <td>Montura más cristales monofocales (lentes de lejos o de cerca)</td>
+                        <td>45 Euros</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- Sección de contacto-->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p> Dirección: Calle Manuela 123, Madrid</p>
+            <p>Teléfono: 912456876</p>
+            <p>email: opticamaca@gmail.com</p>
+            <form action="#" method="post">
+                <label for="nombre1"> Nombre:</label>
+                <input type="text" id="nombre1" name="nombre1" required>
+                <label for="email"> Email:</label>
+                <input type="email" id="email" required>
+                <label for="Telefono-movil"> Teléfono móvil:</label>
+                <input type="tel" id="Telefono-movil">
+                <label for="comentarios"> Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" required></textarea> 
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!-- Sección de Trabaja con nosotros-->
+        <section id="Trabaja-con-nosotros">
+            <h2> Trabaja con nosotros </h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend> Datos personales</legend>
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="apellidos"> Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required >
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <label for="fecha-nacimiento"> Fecha de nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" required>
+                    <label for="codigo-postal">Código postal:</label>
+                    <input type="text" id="codigo-postal">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                    <label for="titulacion"> Titulación:</label>
+                    <input type="text" id="titulacion" required>
+                    <label for="ano-inicio">Año de inicio:</label>
+                    <input type="number" id="ano-inicio">
+                    <label for="ano-fin">Año de finalización:</label>
+                    <input type="number" id="ano-fin">
+                </fieldset>
+                <fieldset>
+                <legend>Idiomas</legend>
+                <label for="idioma">Idioma:</label>
+                <input type="text" id="idioma" name="idioma">
+                <label for="hablado">Hablado:</label>
+                <select id="hablado" name="hablado">
+                    <option value="excelente">Excelente</option>
+                    <option value="bien">Bien</option>
+                    <option value="regular">Regular</option>
+                    <option value="nada">Nada</option>
+                </select>
+                <label for="leido">Leído:</label>
+                <select id="leido" name="leido">
+                <option value="excelente">Excelente</option>
+                <option value="bien">Bien</option>
+                <option value="regular">Regular</option>
+                <option value="nada">Nada</option>
+                </select>
+                <label for="escrito">Escrito:</label>
+                <select id="escrito" name="escrito">
+                <option value="excelente">Excelente</option>
+                <option value="bien">Bien</option>
+                <option value="regular">Regular</option>
+                <option value="nada">Nada</option>
+                </select>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <p>También puedes visitarnos en:</p>
+            <div class="redes-sociales">
+                <a href="#"><img src="logo.facebook.png" alt="Facebook">
+                </a>
+                <a href="#"><img src="logo.instagram.jpeg" alt="Instagram">
+                </a>
+                <a href="#"><img src="logo.twitter.webp" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
+
